@@ -127,11 +127,15 @@
   <body>
     <div class="container">
       <center style="display: none">
-        <audio id="myAudio" controls autoplay volume="0,4">
+        <audio id="myAudio" controls autoplay>
           <source
             src="https://archive.org/download/ngay-xuan-long-phung-sum-vay/ngay-xuan-long-phung-sum-vay.mp3"
           />
         </audio>
+        <script>
+          var audio = document.getElementById("myAudio");
+          audio.volume = 0.4;
+        </script>
       </center>
       <div class="greeting" id="main">
         <h1>
