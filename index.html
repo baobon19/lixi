@@ -1,9 +1,3 @@
-<?php
-
-$name1 = substr($arr[0], 0, strlen($arr[0]) - 9);
-$name = ucwords(str_replace("___"," ",$name1)); 
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -128,20 +122,20 @@ $name = ucwords(str_replace("___"," ",$name1));
         animation: multiBlink 1s infinite;
       }
     </style>
-    <title>Quà Lì Xì Cho <?php echo $name ?></title>
+    <title>Lì Xì Nè</title>
   </head>
   <body>
     <div class="container">
       <center style="display: none">
-        <audio id="myAudio" controls autoplay>
-          <source src="https://archive.org/download/ngay-xuan-long-phung-sum-vay/ngay-xuan-long-phung-sum-vay.mp3" />
+        <audio id="myAudio" controls autoplay volume="0,4">
+          <source
+            src="https://archive.org/download/ngay-xuan-long-phung-sum-vay/ngay-xuan-long-phung-sum-vay.mp3"
+          />
         </audio>
       </center>
       <div class="greeting" id="main">
         <h1>
-          Chào <span id="name"><?php echo $name ?></span>, đến năm mới rồi.
-          <?php echo $name ?>
-          có muốn nhận lì xì của Bảo không?
+          Chào bạn, đến năm mới rồi. Có muốn nhận lì xì của Bảo không🤑🤑?
         </h1>
         <div class="group">
           <select id="nganHang" name="nganHang">
@@ -194,7 +188,7 @@ $name = ucwords(str_replace("___"," ",$name1));
       });
       document.getElementById("noBtn").addEventListener("click", function () {
         document.getElementById("main").innerHTML =
-          "<br><br><br>Dù rất muốn lì xì, nhưng ép nhiều quá thì ngượng ngùng đôi bên.<br><br>Nhân dịp năm mới, Chúc <?php echo $name ?> cùng gia đình nhiều sức khỏe, gặp may mắn trong cuộc sống, và thuận lợi trong công việc. <h2>CHÚC MỪNG NĂM MỚI</h2>";
+          "<br><br><br>Dù rất muốn lì xì, nhưng ép nhiều quá thì ngượng ngùng đôi bên.<br><br>Nhân dịp năm mới, Chúc bạn cùng gia đình nhiều sức khỏe, gặp may mắn trong cuộc sống, và thuận lợi trong công việc. <h2>CHÚC MỪNG NĂM MỚI</h2>";
       });
 
       function moveButtonRandomly(button) {
